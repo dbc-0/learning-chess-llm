@@ -1,0 +1,14 @@
+# Engine / harness private data (keep out of repo so it can be removed entirely)
+config/engine.json
+games/**/engine_private/
+puzzles/private/
+games/puzzle_runs/
+puzzles/raw/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.python-version
+
+
