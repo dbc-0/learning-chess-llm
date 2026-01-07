@@ -13,6 +13,9 @@ ID: orch.play_move.v1
 - Max 6 ply lookahead (except continuing only-checks/only-captures sequences).
 
 ## Procedure
+0) Tool-use prohibition (selection purity):
+   - During **move selection**, you MUST NOT run any chess code or harness scripts (including anything in `tools/`).
+   - You may only use: `ledger.md`, `thinklog.md`, `skills/*`, and repo text search. If you can’t prove it from those, you must mark it INCOMPLETE/UNSURE and choose a safer move.
 1) Read ledger and copy the "STATE" section into the thinklog snapshot.
    - The thinklog entry is the **inspectable decision trace**. If a check is not written down, treat it as not done.
    - **Non-negotiable**: any factual claim in the trace ("square is empty", "this is check", "this is defended", "path is clear") MUST be backed by a lookup/proof using `skills/11_geometry/*` and the ledger piece list. Do not guess.

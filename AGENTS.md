@@ -22,6 +22,8 @@ No chess code, no engines, no chess libraries.
 - Calling any external chess API or database
 - Using any tool that returns legal moves, evaluations, or best moves
 - Copy/pasting external analysis into the decision path
+- Running **any** code in `tools/` (or elsewhere) that could compute legality, generate moves, or evaluate positions.
+- Using scripts/commands to “help” with board state (FEN, legal moves, attack maps, etc.) during move selection. If it isn’t plain text in the repo, you can’t use it to decide.
 
 ## Required behavior per move
 Given a ledger and game id:
